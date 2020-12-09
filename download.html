@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lua - Download</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <link href="assets/styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C100%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B0%2C900%3B1%2C100%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700%3B1%2C900&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/scripts/explicit-reader.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.lua.org/favicon.ico"/>
+  </head>
+  <body id="bout" onload="closeNav(); changeCSS(0, 0);">
+  <a class="hamburger-stripes" href="javascript:void(0)" onclick="openNav()"><span></span></a>
+  <div id="sidenav-master" class="sidenav-master">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="news.html">News</a>
+    <a href="download.html">Download</a>
+  </div>
+	<h1 class="title" style="margin-top: -80px; margin-left: -200px;">Lua: Remade</h1>
+	<img src="assets/images/lua-logo.svg" style="margin-left: -275px;" class="logo" id="logo" onclick="changeCSS(0, 1)"/>
+    <h2 id="source">Source</h2>
+    <p>Lua is <a href="https://www.lua.org/license.html">free software</a> distributed in <a href="https://www.lua.org/ftp/">source code</a>. It may be used for any purpose, including commercial purposes, at absolutely no cost.</p>
+    <p>All <a href="https://www.lua.org/versions.html">versions</a> are available for <a href="https://www.lua.org/ftp/">download</a>. The current version is <a href="https://www.lua.org/versions.html#5.4">Lua 5.4</a> and its current release is <a href="https://www.lua.org/ftp/lua-5.4.1.tar.gz">Lua 5.4.1</a>.</p>
+    <p class="ima"><a href="https://www.lua.org/ftp/lua-5.4.1.tar.gz"><img src="https://www.lua.org/images/downloadarrow.png" alt="download" title="download Lua 5.4.1"></a></p>
+    <p><a href="https://www.lua.org/ftp/lua-5.4.1.tar.gz">lua-5.4.1.tar.gz</a><br>2020-09-30, 346K<br>md5: 1d575faef1c907292edd79e7a2784d30<br>sha1: 88961e7d4fda58ca2c6163938fd48db8880e803d</p>
+    <h2 id="tools">Tools</h2>
+    <p>The main repository of Lua modules is <a href="http://luarocks.org/">LuaRocks</a>. See also <a href="https://github.com/LewisJEllis/awesome-lua">Awesome Lua</a>. Pre-compiled Lua libraries and executables are available at <a href="http://luabinaries.sourceforge.net/">LuaBinaries</a>. The <a href="http://lua-users.org/wiki/">lua-users wiki</a> lists many <a href="http://lua-users.org/wiki/LuaAddons">user-contributed addons</a> for Lua.</p>
+    <h2 id="building">Building</h2>
+    <p>Lua is implemented in pure ANSI C and compiles unmodified in all platforms that have an ANSI C compiler. Lua also compiles cleanly as C++.</p>
+    <p>Lua is very easy to build and install. There are <a href="https://www.lua.org/manual/5.4/readme.html">detailed instructions</a> in the package but here is a simple terminal session that downloads the current release of Lua and builds it in Linux:</p>
+    <p><pre>curl -R -O <a href="http://www.lua.org/ftp/lua-5.4.1.tar.gz">http://www.lua.org/ftp/lua-5.4.1.tar.gz</a>
+tar zxf lua-5.4.1.tar.gz
+cd lua-5.4.1</pre><br>
+    make all test</p>
+    <p>If you have trouble building Lua, <a href="https://www.lua.org/faq.html#1.1">read the FAQ</a>.</p>
+    <p>If you don&#39;t have the time or the inclination to compile Lua yourself, <a href="http://luabinaries.sourceforge.net/">get a binary</a> or try the <a href="https://www.lua.org/demo.html">live demo</a>.</p>
+    <h2 id="giving-credit">Giving credit</h2>
+    <p>If you use Lua, please give us credit, according to our <a href="https://www.lua.org/license.html">license</a>. A nice way to give us further credit is to include a <a href="https://www.lua.org/images/">Lua logo</a> and a <a href="http://www.lua.org/">link to our site</a> in a web page for your product.</p>
+    <h2 id="supporting-lua">Supporting Lua</h2>
+    <p>You can help to <a href="https://www.lua.org/donations.html">support the Lua project</a> by <a href="https://www.lua.org/donations.html#books">buying a book</a> published by Lua.org and by <a href="https://www.lua.org/donations.html#donation">making a donation</a>.</p>
+    <p>You can also help to spread the word about Lua by buying Lua products at <a href="http://www.zazzle.com/Lua_Store">Zazzle</a>.</p>
+    <div class="footer">
+      <p onclick="location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'"class="copyright">Copyright © In da summer of '69 &#x1f633; Luc Angevare & Gregor den Herder</a>
+    </div>
+  </body>
+</html>

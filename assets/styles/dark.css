@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a {
+  color: rgb(140, 140, 250);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  margin-top: 150px;
+  background-color: #141414;
+}
+
+.copyright {
+  padding: 100px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.news_date-time {
+  font-size: 10px;
+  color: #736F73;
+}
+
+li {
+  list-style: none;
+  padding-top: 20px;
+  float: left;
+  width: 350px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 17.5%;
+}
+
+li:nth-child(3)::after {
+  content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+li:nth-child(3n + 1) {
+  clear: left;
+}
+
+#newswindow a {
+  color: rgb(140, 140, 250);
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+embed[type="application/pdf"] {
+  filter: invert(90%);
+}
+
+html {
+  color: rgb(191, 191, 191);
+  background: rgb(31, 31, 31) !important;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  background-image: none !important;
+}
+
+input,
+select,
+textarea,
+button {
+  color: rgb(191, 191, 191);
+  background-color: rgb(31, 31, 31);
+}
+
+font {
+  color: rgb(191, 191, 191);
+}
+
+html {
+  filter: contrast(100%) brightness(100%) saturate(100%);
+}
+
+.NIGHTEYE_Filter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+.NIGHTEYE_YellowFilter {
+  background: rgba(255, 255, 0, 0.15);
+  opacity: 0;
+}
+
+.NIGHTEYE_BlueFilter {
+  background: rgba(0, 0, 255, 0.15);
+  opacity: 0;
+}
+
+.NIGHTEYE_DimFilter {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.NIGHTEYE_TransformZ {
+  transform: translateZ(0px);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidenav-master {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(38, 38, 38);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: all 0.5s ease 0s;
+}
+
+.sidenav-master a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(153, 153, 230);
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.sidenav-master a:hover {
+  color: rgb(153, 153, 230);
+}
+
+.hamburger-stripes {
+  text-align: right;
+  right: 0px;
+  margin-right: 0px;
+}
+
+.quotes-container {
+  margin-top: 90px;
+  position: relative;
+  background: rgba(38, 38, 38, 0.945);
+}
+
+.LuaQuote {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgb(191, 191, 191);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0px 3px 3px 0px;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: rgb(59, 59, 59);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
+  background-color: rgb(94, 94, 94);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: rgb(25, 25, 102);
+}
+
+.hamburger-stripes span {
+  position: absolute;
+  right: 5%;
+  top: 32px;
+}
+
+.hamburger-stripes span,
+.hamburger-stripes span::before,
+.hamburger-stripes span::after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #986ec7;
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.hamburger-stripes span::before {
+  top: -10px;
+}
+
+.hamburger-stripes span::after {
+  bottom: -10px;
+}
+
+.author {
+  color: rgb(153, 153, 230);
+}
+
+.sidenav-master .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  background-image: linear-gradient(90deg, rgba(115, 115, 115, 0.03) 0%, rgba(115, 115, 115, 0.03) 8%, rgba(46, 46, 46, 0.03) 8%, rgba(46, 46, 46, 0.03) 9%, rgba(8, 8, 8, 0.03) 9%, rgba(8, 8, 8, 0.03) 14%, rgba(69, 69, 69, 0.03) 14%, rgba(69, 69, 69, 0.03) 17%, rgba(61, 61, 61, 0.03) 17%, rgba(61, 61, 61, 0.03) 95%, rgba(87, 87, 87, 0.03) 95%, rgba(87, 87, 87, 0.03) 100%), linear-gradient(67.5deg, rgba(79, 79, 79, 0.03) 0%, rgba(79, 79, 79, 0.03) 11%, rgba(138, 138, 138, 0.03) 11%, rgba(138, 138, 138, 0.03) 17%, rgba(122, 122, 122, 0.03) 17%, rgba(122, 122, 122, 0.03) 24%, rgba(115, 115, 115, 0.03) 24%, rgba(115, 115, 115, 0.03) 27%, rgba(36, 36, 36, 0.03) 27%, rgba(36, 36, 36, 0.03) 89%, rgba(89, 89, 89, 0.03) 89%, rgba(89, 89, 89, 0.03) 100%), linear-gradient(67.5deg, rgba(36, 36, 36, 0.03) 0%, rgba(36, 36, 36, 0.03) 4%, rgba(15, 15, 15, 0.03) 4%, rgba(15, 15, 15, 0.03) 10%, rgba(122, 122, 122, 0.03) 10%, rgba(122, 122, 122, 0.03) 20%, rgba(69, 69, 69, 0.03) 20%, rgba(69, 69, 69, 0.03) 83%, rgba(5, 5, 5, 0.03) 83%, rgba(5, 5, 5, 0.03) 84%, rgba(43, 43, 43, 0.03) 84%, rgba(43, 43, 43, 0.03) 100%), linear-gradient(90deg, rgb(28, 28, 33), rgb(28, 28, 33));
+}
+
+#newswindow {
+  background-color: rgb(15, 15, 61);
+  margin: 30px 0px;
+  height: 17px;
+  border: 2px ridge;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Menlo Regular", monospace;
+  font-size: 10pt;
+  bottom: 0px;
+}
+
+.title {
+  height: 70px;
+  font-family:Roboto,sans-serif;
+  font-size: 35px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 60px;
+  top: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.terminal {
+  background: rgb(21, 34, 55);
+  color: rgb(255, 255, 255);
+  height: 300px;
+  overflow: hidden;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Menlo Regular", monospace;
+  font-size: 13px;
+  padding: 15px 5px 15px 15px;
+}
+
+#input {
+  font-family: "Menlo Regular", monospace;
+  font-size: 13px;
+}
+
+.explanation {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.explanation2 {
+  text-align: center;
+}
+
+b {
+  font-weight: 900;
+}
+
+.app {
+  padding-top: 50px;
+  background: rgb(51, 51, 51);
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px 15px 15px 10px;
+  margin-top: 50px;
+}
+
+.app p {
+  color: rgb(230, 203, 153);
+  position: relative;
+  margin-top: -4px;
+  margin-left: 3.3px;
+  cursor: default;
+}
+
+.app #close {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(207, 94, 94);
+  margin-left: 20px;
+  margin-top: -30px;
+  position: absolute;
+  font-size: 20px;
+}
+
+#close:focus {
+  cursor: none;
+}
+
+pre {
+  color: rgb(230, 153, 181);
+  background-color: rgb(36, 36, 36);
+}
+
+#close:active {
+  background-color: rgb(130, 39, 39);
+}
+
+.app::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.line {
+  display: table;
+  width: 100%;
+}
+
+.terminal span {
+  display: table-cell;
+  width: 1px;
+}
+
+.terminal input {
+  display: table-cell;
+  width: 100%;
+  border: none;
+  background: rgb(21, 34, 55);
+  color: rgb(255, 255, 255);
+  outline: none;
+}
+
+#bout {
+  width: 60%;
+  margin: 80px auto;
+}
+
+#header,
+h2 {
+  margin: 10px 0px;
+}
+
+#subheader {
+  margin-top: 15px;
+}
+
+#text,
+#bout p {
+  font-size: 1.1em;
+  padding: 10px 0px;
+  line-height: 28px;
+}
+
+#text a,
+p a {
+  color: rgb(176, 153, 230);
+  text-decoration: none;
+}
+
+#text a:hover,
+p a:hover {
+  color: rgb(153, 158, 230);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.grabber {
+  text-align: center;
+  font-family: norwester;
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+@font-face {
+  font-family: norwester;
+  src: url("/assets/fonts/norwester.otf") format("opentype");
+}
+
+.ima {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ima img {
+  width: 200px;
+}
+
+.ima img:hover {
+  border: 5px solid rgb(25, 25, 102);
+  border-radius: 50%;
+}

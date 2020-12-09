@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Lua - News</title>
+  <script src="assets/scripts/rss_reader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+  <script src="assets/scripts/script.js"></script>
+	<link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C100%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B0%2C900%3B1%2C100%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700%3B1%2C900&display=swap">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="assets/scripts/explicit-reader.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.lua.org/favicon.ico"/>
+</head>
+<body onload="closeNav(); changeCSS(0, 0); explicit_reading().then(() => start('https://www.lua.org/news.rss', 'newswindow'))">
+  <a class="hamburger-stripes" href="javascript:void(0)" onclick="openNav()"><span></span></a>
+  <div id="sidenav-master" class="sidenav-master">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="news.html">News</a>
+    <a href="download.html">Download</a>
+  </div>
+	<h1 class="title">Lua: Remade</h1>
+	<img src="assets/images/lua-logo.svg" class="logo" id="logo" onclick="changeCSS(0, 1)"/>
+  <div id="newswindow"></div>
+  <div style="margin-left: 20px;" id="newsFeed">
+  </div>
+</body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Wouldn't you agree that the current site of Lua is just horrible? No? Well we improved it anyway :)">
+  <meta name="keywords" content="Lua, Web, Docs">
+  <meta name="author" content="Luc Angevare, Gregor den Herder">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lua - most amazingest programming language!1!</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+	</script>
+	<link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C100%3B0%2C300%3B0%2C400%3B0%2C500al%3B0%2C700%3B0%2C900%3B1%2C100%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700%3B1%2C900&display=swap">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="assets/scripts/script.js"></script>
+	<script src="assets/scripts/jquery-terminal.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.lua.org/favicon.ico"/>
+
+</head>
+
+<body onload="cookieCheck(); closeNav(); showSlides(1); changeCSS(0, 0);">
+  <a class="hamburger-stripes" href="javascript:void(0)" onclick="openNav()"><span></span></a>
+  <div id="sidenav-master" class="sidenav-master">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="news.html">News</a>
+    <a href="download.html">Download</a>
+  </div>
+	<h1 class="title">Lua: Remade</h1>
+	<img src="assets/images/lua-logo.svg" class="logo" id="logo" onclick="changeCSS(0, 1)"/>
+    <div id="container1">
+      <div class="app">
+        <span id="close" onclick="Cookies.set('hahahaha-geen-cursor',true); cookieCheck()"><p>&times;</p></span>
+        <div class="terminal">
+          <div id="history">
+            
+          </div>
+          <div class="line">
+            <span id="path">Shell:/&nbsp;>&nbsp;</span>
+            <input type="text" id="input">
+          </div>
+        </div>
+      </div>
+        <p class="explanation"><strong><b>Lua</b></strong> is a gentle, <sub>dis</sub>organized, light-as-a-brick but most importantly, <em>extremely</em> counter-intuitive programming language.<br>Our goal, as incompetent developers, is to irritate everyone that knows even a tiny bit about programming by making our arrays start<br>with *1*. That's right. 1. Because fuck 0 and maths, who needs those anyway?<br>Not programmers, we can guarantee you that.<br>Now that that's out of the way, we've got some explaining to do. Lua is simply the <em><b>best</b></em> language there is, especially when it comes to error handling.<br>You know that stack overflow error you get in C, C# and C++? Prepare to get that error, </p><h2 class="grabber" style="margin-top: 2.5px;">10 times as much</h2><p class="explanation2">Because fuck 0s and RAM usage.</p>
+    </div>
+    <div class="quotes-container">
+      <div class="LuaQuote">
+        <q>Arrays start at 1, that isn't dumb... It's just a creative new way at looking of things...<br>how much am I getting paid for this again?</q>
+        <p class="author">- Albert Einstein... I think</p>
+      </div>
+
+      <div class="LuaQuote">
+        <q>[12 - 12] == [12 / 12]</q>
+        <p class="author">- Creators of the Lua programming language</p>
+      </div>
+
+      <div class="LuaQuote">
+        <q>Why the hell is Lua being used as modding language for so many games?</q>
+        <p class="author">- Definitely Elon Musk</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--Ik weet dat er een <footer> tag is in HTML maar ik heb altijd geleerd dat het enige wat dat doet is de tijd om de site te laden verhogen, dus gebruik ik hier altijd een <div> voor-->
+    <div class="footer" style="margin-top: 0px;">
+      <p onclick="location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'"class="copyright">Copyright © In da summer of '69 &#x1f633; Luc Angevare & Gregor den Herder</a>
+    </div>
+  </body>
+</html>
