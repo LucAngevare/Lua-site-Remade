@@ -7,6 +7,13 @@ The current Lua site sucks, honestly nobody can disagree with that. For a comput
 * All the libraries/frameworks for dark mode were and are terrible so I chose to make my own (I just decided to switch the CSS file which works beautifully when the site is freshly cached). In the future I would change this up to use the mechanic that IDs override classes, meaning I would be able to just de-hook the ID and let the CSS hook to the class in order to make it not space out when loading or switching to dark/light mode.
 * We started a day before the deadline so you know... planning
 
+## Screenshots
+I'm just gonna put screenshots of the homepage here because I mean no.
+
+Light mode - ![Light Mode](https://i.imgur.com/lD3kkZK.png)
+
+Dark mode - ![Dark Mode](https://i.imgur.com/s8LYofc.png)
+
 # Easter eggs
 * If you click on Lua's logo on any page, the website will be put in dark mode, and will remain in dark mode until you turn it off by clicking the logo again.
 * In the shell, if you type a 0, it comes with the text
